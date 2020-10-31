@@ -1,0 +1,728 @@
+body {
+  font-family: "Trip Sans Med", Arial;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  /* border: 4px black solid;
+  box-sizing: border-box; */
+}
+
+.wraper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  height: 60px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  display: flex;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.container > i {
+  display: none;
+  font-size: 20px;
+}
+header img {
+  max-width: 188px;
+}
+header img:hover {
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav div {
+  margin-right: 20px;
+  border: 2px white solid;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+header nav div:hover {
+  cursor: pointer;
+  border-color: black;
+}
+
+header nav div i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+header button {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.932);
+  height: 40px;
+  width: auto;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  font-family: "Trip Sans Reg";
+  line-height: 19.8px;
+}
+
+header button:hover {
+  opacity: 0.6;
+}
+
+main {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+  letter-spacing: 1.1px;
+  line-height: 64px;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #fd5d5e;
+}
+.boutons {
+  margin-bottom: 20px;
+  width: 100%;
+  /* max-width: 1280px; */
+  height: auto;
+}
+
+.boutons > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.boutons > ul > li {
+  padding: 15px;
+  border-radius: 10px;
+  border: solid 1px black;
+  flex: 1;
+  line-height: 20px;
+}
+.boutons > ul > li:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.boutons > ul > li > ul {
+  height: 100%;
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boutons > ul > li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.boutons > ul > li:nth-child(7) {
+  position: absolute;
+  opacity: 0;
+}
+
+.pictures {
+  display: flex;
+  height: 430px;
+  width: 100%;
+}
+.numberone {
+  height: 100%;
+  flex: 2.45;
+  margin-right: 2px;
+}
+
+.numberone:hover,
+.pic2:hover,
+.pic3:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.two_pictures {
+  flex: 1;
+  height: 100%;
+}
+
+.numberone img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.pic2 {
+  height: 213.5px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.pic3 {
+  height: 213.5px;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  object-fit: cover;
+}
+
+main nav {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+main nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Trip Sans Reg";
+  font-size: 12px;
+  line-height: 14, 4px;
+}
+
+.box1 {
+  width: 100%;
+  /* height: 422px; */
+  margin-bottom: 40px;
+  display: flex;
+  /* align-items: center;
+  justify-content: space-between; */
+}
+
+.box2 {
+  width: 50%;
+  height: 100%;
+}
+
+.box3 {
+  width: calc(50% - 80px);
+  height: 100%;
+
+  /* background-color: #fd5d5e;
+  border-radius: 10px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  margin-left: 80px;
+}
+
+.title1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+  line-height: 38.4px;
+  letter-spacing: 0.6px;
+}
+.title2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-family: "Trip Sans Reg";
+  font-weight: bold;
+  /* margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 30px; */
+}
+
+.text1 {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 24px;
+  color: #474747;
+}
+
+.text2 {
+  margin: 20px 0;
+  font-family: "Trip Sans Reg";
+  line-height: 20px;
+}
+.box3 > div {
+  background-color: #ff5d5d;
+  height: 234px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box3 button {
+  height: 55px;
+  width: 155px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 30px;
+  font-family: "Trip Sans Reg";
+  line-height: 19.8px;
+}
+
+.box3 button:hover {
+  cursor: pointer;
+  background-color: #474747;
+}
+
+.box3 img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.line {
+  border-top: solid black 1px;
+  flex: 1;
+}
+
+.faireligne {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faireligne ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title3 {
+  font-size: 32px;
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+  margin: 0 10px;
+  line-height: 38.4px;
+  letter-spacing: 0.6px;
+}
+
+.minitxt {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.minitxt:hover {
+  cursor: pointer;
+  color: #474747;
+  text-decoration: underline;
+}
+.boutons2 {
+  margin-bottom: 40px;
+  height: auto;
+}
+.boutons2 > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boutons2 > ul > li {
+  border-radius: 10px;
+  display: flex;
+  border: solid 2px lightgrey;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.boutons2 > ul > li:hover {
+  cursor: pointer;
+  border-color: black;
+  text-decoration: underline;
+}
+.boutons2 > ul > li > ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.boutons2 img {
+  height: 80px;
+  width: 80px;
+  margin: 0 10px;
+}
+
+.text3 {
+  font-size: 20px;
+  font-family: "Trip Sans Reg";
+  line-height: 28px;
+}
+
+.bigbox {
+  width: 100%;
+  margin-top: 20px;
+  height: 100%;
+  max-height: 500px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.boxtext {
+  flex: 1;
+  height: 100%;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.boximage {
+  flex: 3;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  font-family: "Trip Sans Reg";
+  color: #474747;
+}
+
+.boximage > div > p {
+  font-size: 18px;
+  font-family: "Trip Sans Med";
+  color: black;
+}
+
+.boximage > div {
+  height: 100%;
+  width: calc(100% / 3 - (40px / 3));
+  flex-shrink: 0;
+  margin-right: 16px;
+  line-height: 130%;
+  position: relative;
+  /* border: 2px black solid; */
+}
+
+.titlebox {
+  font-size: 32px;
+  line-height: 38.4px;
+  margin-bottom: 20px;
+  font-family: "Trip Sans Reg";
+  font-weight: bold;
+}
+.text4 {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 21.6px;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.littletext {
+  font-size: 14px;
+  font-family: "Trip Sans Reg";
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.boximage img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 10px;
+}
+
+.boximage i {
+  color: #20aa6c;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle::before {
+  color: black;
+  font-size: 20px;
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+}
+
+.circle:hover::before {
+  color: #d5393e;
+  font-size: 20px;
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  cursor: pointer;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  width: 188px;
+}
+
+footer div {
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d5393e;
+}
+
+a:visited {
+  color: #34e0a1;
+}
+
+a:focus {
+  color: rgb(66, 106, 192);
+}
+
+/* ////////////////// Media Queries ///////////////// */
+
+@media (max-width: 1328px) {
+  .boutons > ul > li {
+    flex: 25%;
+    box-sizing: border-box;
+  }
+  .boutons > ul > li:nth-child(7) {
+    position: static;
+    opacity: 1;
+  }
+  .boutons > ul > li:not(:last-child) {
+    margin-right: 0px;
+  }
+  .pictures {
+    height: 372px;
+    width: 100%;
+  }
+  .pic2,
+  .pic3 {
+    height: 184.5px;
+  }
+}
+@media (max-width: 1023px) {
+  header img {
+    max-width: 169px;
+  }
+  header span {
+    display: none;
+  }
+  .pictures {
+    height: 276px;
+    width: 100%;
+  }
+  .pic2,
+  .pic3 {
+    height: 136.5px;
+  }
+  .box1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .box2 {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .box3 {
+    display: flex;
+    width: 100%;
+    height: 280px;
+    margin-left: 0px;
+    background-color: #f2f2f2;
+  }
+  .box3 > div {
+    background-color: #ff5d5d;
+    height: 100%;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .box3 img {
+    height: 280px;
+    width: 50%;
+    object-fit: fill;
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .boutons2 > ul > li {
+    flex: 50%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  /* .boutons2 p {
+    font-size: 14px;
+  } */
+  .boximage > div {
+    height: 100%;
+    width: calc(100% / 2 - (40px / 2));
+    flex-shrink: 0;
+    margin-right: 16px;
+    line-height: 130%;
+    position: relative;
+  }
+  .boximage img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  header img {
+    max-width: 132px;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container i {
+    display: flex;
+  }
+  h1 {
+    font-size: 32px;
+    letter-spacing: 0.6px;
+    line-height: 32px;
+  }
+  .boutons p {
+    font-size: 11px;
+  }
+
+  .boutons > ul > li > ul > li:last-child {
+    display: none;
+  }
+
+  .boutons > ul > li > ul {
+    justify-content: center;
+  }
+  .pictures {
+    margin-bottom: 20px;
+  }
+  .two_pictures {
+    display: none;
+  }
+  .numberone img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .container nav {
+    display: none;
+  }
+  .box1 {
+    flex-direction: column;
+  }
+  .box2 {
+    width: 100%;
+    height: 100%;
+  }
+  .box2 .title1 {
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 0.5px;
+  }
+  .text1 {
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .box3 {
+    width: 100%;
+    height: 500px;
+    margin-left: 0px;
+    flex-direction: column;
+  }
+  .box3 > div {
+    background-color: #ff5d5d;
+    height: 50%;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .box3 img {
+    height: 50%;
+    width: 100%;
+    object-fit: fill;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  .bigbox {
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .boximage > div {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    /* margin-right: 16px; */
+    line-height: 120%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .boximage img {
+    height: 200px;
+    /* max-height: 307px; */
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+  }
+  footer div {
+    font-size: 10px;
+  }
+  footer img {
+    max-width: 100px;
+  }
+}
